@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import xmlChecker from 'xmlchecker';
+import sqlFormatter from "sql-formatter";
+
 import './App.css';
 import InputCard from './component/input-box/InputCard'
 
@@ -10,18 +13,69 @@ class App extends Component {
     super()
     this.state = {
       inputText: '',
-      outputText:''
+      outputText:'',
+      state:''
     }
   }
 
 
   onInputChange = (event) => {
     this.setState({ inputText: event.target.value })
-    console.log(event.target);
-    console.log(this.state);
+    this.setState({ state:'' })
   }
+  onButtonClick = (event) => {
+    if(event.target.innerHTML==="XML"){
+      this.setState({ state:"XML"})
+    }
 
+    if(event.target.innerHTML==="JSON"){
+      this.setState({ state:"JSON"})
+    }
+
+    if(event.target.innerHTML==="SQL"){
+      this.setState({ state:"SQL"})
+    }
+     if(event.target.innerHTML==="RESET"){
+      this.setState({ state:"RESET"})
+    }
+  }
   render() {
+        var { inputText, outputText,state } = this.state;
+        outputText='';
+        if(state==='XML'){
+            
+            try{
+                xmlChecker.check(inputText);
+                outputText=xmlChecker.prettify(inputText);
+            }
+            catch (error){
+                outputText = "XML Parser: " + error.name + " at " + error.line + "," + error.column + ": " + error.message;
+            }
+        }
+        if(state==='JSON'){
+            
+            try{
+                var jsObj=JSON.parse(inputText);
+                outputText=JSON.stringify(jsObj, null, "\t");
+                }
+            catch (error){
+                outputText = "JSON Parser: " + error.message;
+            }
+        }
+        if(state==='SQL'){
+            
+            try{
+                outputText=sqlFormatter.format(inputText);
+            }
+            catch (error){
+                outputText = "XML Parser: " + error.name + " at " + error.line + "," + error.column + ": " + error.message;
+            }
+        }
+        else if(state==='RESET'){
+            outputText='';
+            inputText='';
+        }
+
   return (   
       <div className="flex flex-column">
 
@@ -31,10 +85,10 @@ class App extends Component {
             <InputCard inputChange={this.onInputChange}/>
           </div>
           <div>
-            <CardButtons/>
+            <CardButtons buttonClick={this.onButtonClick}/>
           </div>
           <div>
-            <OutputCard/>
+            <OutputCard outputText={outputText}/>
           </div>
         </div>
     </div>

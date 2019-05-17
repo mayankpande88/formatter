@@ -1,9 +1,9 @@
 import React from 'react';
 import './OutputCard.css';
-function OutputCard() {
+const OutputCard=(props) =>{
   return (
     <div >
-    		<textarea rows="30" cols="60" className="fl black bg-near-white near-black pa2 ma5 textarea">
+    		<textarea rows="30" cols="60" className="fl black bg-near-white near-black  ma5 textarea pa4" value={props.outputText} readOnly>
 			</textarea>
     </div>
   );

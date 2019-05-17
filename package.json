@@ -2,18 +2,25 @@
   "name": "file-formatter",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/mayankpande88/formatter",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-json-view": "^1.19.1",
     "react-particles-js": "^2.6.0",
     "react-scripts": "3.0.1",
-    "tachyons": "^4.11.1"
+    "sql-formatter": "^2.3.2",
+    "tachyons": "^4.11.1",
+    "xmlchecker": "^0.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "formatterv1 -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
