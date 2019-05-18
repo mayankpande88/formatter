@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/mayankpande88/formatter/static/css/main.b0089dc7.chunk.css",
-    "main.js": "/mayankpande88/formatter/static/js/main.6b595631.chunk.js",
-    "main.js.map": "/mayankpande88/formatter/static/js/main.6b595631.chunk.js.map",
-    "runtime~main.js": "/mayankpande88/formatter/static/js/runtime~main.c75de038.js",
-    "runtime~main.js.map": "/mayankpande88/formatter/static/js/runtime~main.c75de038.js.map",
-    "static/css/2.31dafeb2.chunk.css": "/mayankpande88/formatter/static/css/2.31dafeb2.chunk.css",
-    "static/js/2.8f21b2f0.chunk.js": "/mayankpande88/formatter/static/js/2.8f21b2f0.chunk.js",
-    "static/js/2.8f21b2f0.chunk.js.map": "/mayankpande88/formatter/static/js/2.8f21b2f0.chunk.js.map",
-    "index.html": "/mayankpande88/formatter/index.html",
-    "precache-manifest.008caab94256b5a8c9d385071bde92b8.js": "/mayankpande88/formatter/precache-manifest.008caab94256b5a8c9d385071bde92b8.js",
-    "service-worker.js": "/mayankpande88/formatter/service-worker.js",
-    "static/css/2.31dafeb2.chunk.css.map": "/mayankpande88/formatter/static/css/2.31dafeb2.chunk.css.map",
-    "static/css/main.b0089dc7.chunk.css.map": "/mayankpande88/formatter/static/css/main.b0089dc7.chunk.css.map"
+    "main.css": "/formatter/static/css/main.b0089dc7.chunk.css",
+    "main.js": "/formatter/static/js/main.cefc465d.chunk.js",
+    "main.js.map": "/formatter/static/js/main.cefc465d.chunk.js.map",
+    "runtime~main.js": "/formatter/static/js/runtime~main.a41bc049.js",
+    "runtime~main.js.map": "/formatter/static/js/runtime~main.a41bc049.js.map",
+    "static/css/2.31dafeb2.chunk.css": "/formatter/static/css/2.31dafeb2.chunk.css",
+    "static/js/2.8f21b2f0.chunk.js": "/formatter/static/js/2.8f21b2f0.chunk.js",
+    "static/js/2.8f21b2f0.chunk.js.map": "/formatter/static/js/2.8f21b2f0.chunk.js.map",
+    "index.html": "/formatter/index.html",
+    "precache-manifest.96a7acab6eaa2f477fd93503d7111cba.js": "/formatter/precache-manifest.96a7acab6eaa2f477fd93503d7111cba.js",
+    "service-worker.js": "/formatter/service-worker.js",
+    "static/css/2.31dafeb2.chunk.css.map": "/formatter/static/css/2.31dafeb2.chunk.css.map",
+    "static/css/main.b0089dc7.chunk.css.map": "/formatter/static/css/main.b0089dc7.chunk.css.map"
   }
 }
