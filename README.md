@@ -1,4 +1,4 @@
-### Live URL : https://github.com/mayankpande88/formatter/deployments
+### Live URL : https://mayankpande88.github.io/formatter/
 
 In the project directory, you can run:
 
