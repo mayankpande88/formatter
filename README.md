@@ -1,6 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
+### Live URL : https://github.com/mayankpande88/formatter/deployments
 
 In the project directory, you can run:
 
