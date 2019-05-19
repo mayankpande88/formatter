@@ -78,21 +78,23 @@ class App extends Component {
 
   return (   
   <div className="h-100 w-100 ">
-  <div class="topnav">
-  <div class="topnav-right">
-            <nav>
-                  <GitHubButton href="https://github.com/mayankpande88" data-size="large" aria-label="Follow @mayankpande88 on GitHub">Follow @mayankpande88</GitHubButton>
-                </nav>
-      </div>
-</div>
-    <div className="flex flex-column pt4 h-100">
-        <div className="flex h-100 w-100">
-            <InputCard inputChange={this.onInputChange } inputText={inputText} state={this.state.state}/>
-            <CardButtons buttonClick={this.onButtonClick}/>
-            <OutputCard outputText={outputText} state={this.state.state}/>
+        <div className="topnav header">
+              <nav className="topnav-center">
+                  <b className="f3 f1-l ml6 pl5">Formatter</b>
+                  <div className="topnav-right">
+                       <GitHubButton href="https://github.com/mayankpande88" data-size="large" aria-label="Follow @mayankpande88 on GitHub">Follow @mayankpande88</GitHubButton>
+                  </div>
+              </nav>
         </div>
-    </div>
- 
+        <div className="flex flex-column center pt4 h-100 ma0">
+        <b className="pb3 center">Formats a XML/JSON/SQL string into redable format. The formatting rules are not configurable but it uses a per-element indentation pattern giving the best readability.</b>
+                    
+            <div className="flex center h-100 w-100">
+                <InputCard inputChange={this.onInputChange } inputText={inputText} state={this.state.state}/>
+                <CardButtons buttonClick={this.onButtonClick}/>
+                <OutputCard outputText={outputText} state={this.state.state}/>
+            </div>
+        </div>
   </div>
   );  }
 }

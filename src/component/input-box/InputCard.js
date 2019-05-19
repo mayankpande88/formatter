@@ -12,6 +12,7 @@ const InputCard=(props) =>{
   				options={{
     				mode: props.state,
     				theme: 'material',
+    				lineWrapping: true,
     				lineNumbers: true
   					}}
   				onBeforeChange={props.inputChange}

@@ -1,10 +1,16 @@
 
-.topnav {
-  overflow: hidden;
-}
-
-
 .topnav-right {
   float: right;
 }
 
+
+.topnav-center {
+  text-align: center
+}
+
+.header {
+  overflow: hidden;
+  background-color: #333;
+  color: white;
+  padding-top: 10px;
+}
