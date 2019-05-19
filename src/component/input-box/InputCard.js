@@ -11,7 +11,7 @@ const InputCard=(props) =>{
      			value={props.inputText}
   				options={{
     				mode: props.state,
-    				theme: 'xq-light',
+    				theme: 'material',
     				lineNumbers: true
   					}}
   				onBeforeChange={props.inputChange}

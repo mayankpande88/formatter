@@ -15,6 +15,7 @@ const OutputCard=(props) =>{
             value={props.outputText}
             options={{
                       mode: props.state,
+                      theme: 'material',
                       lineNumbers: true, 
                       foldGutter: true,
                       lineWrapping: true,

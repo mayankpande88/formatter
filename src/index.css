@@ -1,5 +1,5 @@
 body {
- background: linear-gradient(to left, rgba(7,27,82,1) 0%, rgba(0,128,128,1) 100%); /* w3c */
+ background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
   margin: 0;
   padding: 0;
 }

@@ -77,20 +77,22 @@ class App extends Component {
         }
 
   return (   
-  <div className="h-100 w-100">
-     <div className="flex pa0">
-        <h1 className="center pl2"> Formatter</h1>
-        <nav className="fr">
-              <GitHubButton href="https://github.com/mayankpande88" data-size="large" aria-label="Follow @mayankpande88 on GitHub">Follow @mayankpande88</GitHubButton>
-        </nav>
-    </div>
-    <div className="flex flex-column h-100">
+  <div className="h-100 w-100 ">
+  <div class="topnav">
+  <div class="topnav-right">
+            <nav>
+                  <GitHubButton href="https://github.com/mayankpande88" data-size="large" aria-label="Follow @mayankpande88 on GitHub">Follow @mayankpande88</GitHubButton>
+                </nav>
+      </div>
+</div>
+    <div className="flex flex-column pt4 h-100">
         <div className="flex h-100 w-100">
             <InputCard inputChange={this.onInputChange } inputText={inputText} state={this.state.state}/>
             <CardButtons buttonClick={this.onButtonClick}/>
             <OutputCard outputText={outputText} state={this.state.state}/>
         </div>
     </div>
+ 
   </div>
   );  }
 }
