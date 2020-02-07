@@ -5,7 +5,7 @@
     <action name="shell1"> <!-- retry options..depend upon actions -->
 			<hdp:SHELL>
 				<exec>bash</exec>
-				<args>dc_test.sh</args>
+				<args>testShell.sh</args>
 				<distributedCache>
 					<file>map:github://testShell.sh</file>
 				</distributedCache>
