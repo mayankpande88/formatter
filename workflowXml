@@ -10,7 +10,7 @@
 					<file>map:github://testShell.sh</file>
 				</distributedCache>
 			</hdp:SHELL>			
-			<ok to="shell2" />
+			<ok to="end" />
 			<fail to="kill" />
 			<stats enabled="true" />
 		</action>
