@@ -2,29 +2,18 @@
 <workflow xmlns:hdp="hdp" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" engine="kubernetes" name="SampleWorkflow" xsi:noNamespaceSchemaLocation="../../workflow_schema.xsd" xsi:schemaLocation="hdp ../../actions_hadoop.xsd">
   <job>
     <start to="Transform_60"/>
-    <action name="Transform_60">
-      <hdp:transformation>
-        <transform>
-          <dataset>
-            <data name="JSON_42">
-              <source>
-                <json>
-                  <value>{"a":1}</value>
-                </json>
-              </source>
-            </data>
-          </dataset>
-          <store>
-            <dest dataset="JSON_42" name="Dump_49">
-              <dump sample="100"/>
-            </dest>
-          </store>
-        </transform>
-      </hdp:transformation>
-      <ok to="end"/>
-      <fail to="kill"/>
-      <stats enabled="true"/>
-    </action>
+    <action name="shell1"> <!-- retry options..depend upon actions -->
+			<hdp:SHELL>
+				<exec>bash</exec>
+				<args>dc_test.sh</args>
+				<distributedCache>
+					<file>map:github://testShell.sh</file>
+				</distributedCache>
+			</hdp:SHELL>			
+			<ok to="shell2" />
+			<fail to="kill" />
+			<stats enabled="true" />
+		</action>
     <kill name="kill">
       <message>The workflow failed.</message>
     </kill>
